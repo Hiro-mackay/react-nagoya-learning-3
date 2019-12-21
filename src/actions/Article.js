@@ -1,16 +1,16 @@
 import * as actions from './ActionType';
 
-export const addArticle = function(article){
-  type: "ADD_ARTICLE",
+export const addArticle = (article) => ({
+  type: actions.ADD_ARTICLE,
   article
-};
+});
 
-export const updateArticle = function(article){
-  type: "UPDATE_ARTICLE",
+export const updateArticle = (article) => ({
+  type: actions.UPDATE_ARTICLE,
   article
-};
+});
 
 export const deleteArticle = (articleId) => ({
-  type: "DELETE_ARTICLE",
+  type: actions.DELETE_ARTICLE,
   articleId
 });
